@@ -22,6 +22,6 @@ else:
    largest = num3
 
 
-st.print("The Largest Number is")
+st.write("The Largest Number is")
 st.text(largest)
 
