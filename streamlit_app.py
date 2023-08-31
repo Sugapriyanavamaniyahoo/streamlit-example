@@ -21,6 +21,6 @@ elif (num2 >= num1) and (num2 >= num3):
 else:
    largest = num3
 
-st.write("The Largest Number is")
-st.text(largest)
+st.write("The Largest Number is "largest)
+
 
