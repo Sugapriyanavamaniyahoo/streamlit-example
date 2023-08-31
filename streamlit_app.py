@@ -5,7 +5,7 @@ import pandas as pd
 import streamlit as st
 
 
-#Largest among 3 numbers
+st.header("Largest among 3 numbers")
 
 
 num1 = st.number_input('Enter First Numner: ')
