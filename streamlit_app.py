@@ -14,14 +14,20 @@ forums](https://discuss.streamlit.io).
 
 In the meantime, below is an example of what you can do with just a few lines of code:
 """
-number1 = st.number_input('Enter First Numner: ')
+num1 = st.number_input('Enter First Numner: ')
 
-number2 = st.number_input('Enter Second Numner: ')
+num2 = st.number_input('Enter Second Numner: ')
 
-number3 = st.number_input('Enter Third Numner: ')
+num3 = st.number_input('Enter Third Numner: ')
 
-if (number1 > number2)
-st.write("First Number is largest")
+if (num1 >= num2) and (num1 >= num3):
+   largest = num1
+elif (num2 >= num1) and (num2 >= num3):
+   largest = num2
+else:
+   largest = num3
+
+st.text(largest)
 
 with st.echo(code_location='below'):
     total_points = st.slider("Number of points in spiral", 1, 5000, 2000)
